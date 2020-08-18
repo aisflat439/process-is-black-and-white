@@ -1,10 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `The process is black and white`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `@arshad/gatsby-theme-podcast-core`,
+      options: {
+        feedUrl: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,
+        podcast: {
+          name: `The Process is Black and White`,
+          description: `Two friends who are starting businesses have a weekly chat. They review a book they're reading, and schedule their weeks`,
+          image: `assets/images/podcast.jpg`,
+          social: [
+            {
+              name: `Apple Podcast`,
+              url: `https://itunes.apple.com`,
+            },
+            {
+              name: `Google Podcast`,
+              url: `https://podcasts.google.com`,
+            },
+          ],
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
