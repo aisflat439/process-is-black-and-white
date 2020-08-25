@@ -7,6 +7,8 @@ const Episodes = () => {
       allPodcastEpisode {
         edges {
           node {
+            id
+            date
             title
             summary
           }
@@ -15,7 +17,8 @@ const Episodes = () => {
     }
   `)
 
-  console.log(data)
+  const episodes = data.allPodcastEpisode.edges.sort((a, b) => new Date(b.node.date) - new Date(a.node.date));
+  console.log('episodes', episodes)
 
   return (
     <div>

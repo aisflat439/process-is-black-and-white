@@ -35,6 +35,12 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
+          Vernon Lee - <a href="https://www.fitzsimons.dev">Personal Site</a>
+          <br />
+          and
+          <br />
+          Devin Fitzsimons - <a href="https://www.fitzsimons.dev">Personal Site</a>
+          <br />
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
