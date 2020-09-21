@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
             justifyContent: `space-between`
           }}
         >
-          <h1 style={{ margin: 0 }}>
+          <h2 style={{ margin: 0 }}>
             <Link
               to="/"
               style={{
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
             >
               {siteTitle}
             </Link>
-          </h1>
+          </h2>
           <h3 style={{ margin: 0, display: `flex`, alignItems: `center` }}>
             <Link
               to="/books/"
