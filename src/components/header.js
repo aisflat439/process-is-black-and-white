@@ -12,48 +12,59 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        border: '2px solid white',
+        border: '.334rem solid white',
         padding: `.5rem`,
       }}
     >
       <div
         style={{
-          border: '2px solid white',
+          margin: `0 auto`,
+          maxWidth: `70vw`,
+          padding: `1.45rem 1.0875rem`,
+          display: `flex`,
+          justifyContent: `space-between`
         }}
       >
-
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: `70vw`,
-            padding: `1.45rem 1.0875rem`,
-            display: `flex`,
-            justifyContent: `space-between`
-          }}
-        >
-          <h2 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
-          </h2>
-          <h3 style={{ margin: 0, display: `flex`, alignItems: `center` }}>
-            <Link
-              to="/books/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              the books
+        <h2 style={{
+          fontSize: `3rem`,
+          fontWeight: 400,
+          margin: 0,
+          fontFamily: `Abril Fatface`,
+        }}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h2>
+      </div>
+      <div style={{ display: `flex`, justifyContent: `space-evenly` }}>
+        <h3 style={{ margin: `.5rem` }}>
+          <Link
+            to="/books/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            the books
         </Link>
-          </h3>
-        </div>
+        </h3>
+        <h3 style={{ margin: `.5rem` }}>
+          <Link
+            to="/the process/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            the process
+        </Link>
+        </h3>
       </div>
     </div>
   </header >

@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `The process is black and white`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `The Process is Black and White`,
+    description: `Two friends discuss starting a their respective businesses along with whatever their journey entails.`,
+    author: `@fitzsimonsdev`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: [`Abril Fatface`]
+        }
+      }
+    },
     {
       resolve: `@arshad/gatsby-theme-podcast-core`,
       options: {
@@ -45,7 +53,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/bw*-/-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/bw-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
