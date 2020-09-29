@@ -21,7 +21,6 @@ const Episodes = () => {
   `)
 
   const episodes = data.allPodcastEpisode.edges.sort((a, b) => new Date(b.node.date) - new Date(a.node.date));
-  console.log('episodes', episodes)
 
   return (
     <div style={{ padding: `.5rem`, marginTop: `1.45rem` }}>
@@ -40,12 +39,13 @@ const Episodes = () => {
 
 export default Episodes
 
-// // http: //cast.rocks/hosting/26747/feeds/6EK9V.xml
+  // // http: //cast.rocks/hosting/26747/feeds/6EK9V.xml
 
-  // <div><article> <p>Discussion of the new book begins. Vernon is excited that it's data and fact based, Devin is interested in the idea of prerequisites. The pair give updates as they move forward. Vernon is excited about what the future holds for getting underpriced assets. Devin finally got his computer back and is ready to get back to work.</p>
-  // <h3>Links:</h3>
-  //   <p>Shopify - <a href="https://www.shopify.com/">eCommerce SaaS</a></p>
-  //   <p>Cottage Food Laws - <a href="https://www.pickyourown.org/CottageFoodLawsByState.htm">Explanation blog</a></p>
-  //   <p>Chapter 1 - <a href="https://www.amazon.com/Discrimination-Disparities-Thomas-Sowell/dp/154164560X">Discrimination and Disparities</a></p>
-  //   <p>Jerami Grant - <a href="https://en.wikipedia.org/wiki/Jerami_Grant">Wikipedia entry</a></p>
-  // </article></div >
+//   < div >
+//   <article>
+//     <p>The guys discuss an exciting new plan. Vernon has made tremendous progress on his spice rubs so he's beginning to look at eCommerce. Devin's background in eCommerce agency work sets up a nice opportunity for the two to work together, for the listeners. There's discussion on the when in doubt, blitz strategy as well as a confession about how they read different chapters last week. </p>
+//     <h3>Links:</h3>
+//     <p>Akimbo Podcast - <a href="https://www.akimbo.link/blog/s-3-e-2-you-re-it">Podcast episode</a></p>
+//     <p>The Mom Test - <a href="http://momtestbook.com/">Book link</a></p>
+//   </article>
+// </div >

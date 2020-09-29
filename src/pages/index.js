@@ -18,7 +18,7 @@ const IndexPage = () => (
       </article>
     </main>
     <Subscribe />
-    <div style={{ maxWidth: `70vw`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `70vw`, margin: `auto`, marginBottom: `1.45rem` }}>
       <Episodes />
     </div>
   </Layout>

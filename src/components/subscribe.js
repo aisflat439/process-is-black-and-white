@@ -25,25 +25,26 @@ const SERVICES = [
 
 const Subscribe = () => (
   <section style={{ backgroundColor: `black`, color: `white`, border: `2px solid white`, padding: `.5rem` }}>
-    <div style={{ border: `2px solid white`, padding: `.5rem` }}>
-      <div style={{ border: `2px solid white`, padding: `1.5rem` }}>
-        <h4 style={{}}>Subscribe</h4>
-        <div style={{ fontSize: `2rem` }}>
-          <ul style={{ marginLeft: 0, listStyle: `none`, display: `flex`, flexDirection: `row`, justifyContent: `space-between` }}>
-            {SERVICES.map(service => (
-              <li style={{}}>
-                <a
-                  style={{ color: `white`, textDecoration: `none` }}
-                  target="_blank"
-                  href={service.link}
-                  rel="noopener noreferrer"
-                >
-                  {service.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <div style={{ border: `.334rem solid white`, padding: `1.5rem` }}>
+      <h4 style={{
+        fontWeight: 400,
+        fontFamily: `Abril Fatface`,
+      }}>Subscribe</h4>
+      <div style={{ fontSize: `2rem` }}>
+        <ul style={{ marginLeft: 0, listStyle: `none`, display: `flex`, flexDirection: `row`, justifyContent: `space-between` }}>
+          {SERVICES.map(service => (
+            <li style={{}}>
+              <a
+                style={{ color: `white`, textDecoration: `none` }}
+                target="_blank"
+                href={service.link}
+                rel="noopener noreferrer"
+              >
+                {service.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </section >

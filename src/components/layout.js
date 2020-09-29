@@ -34,18 +34,26 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          Vernon Lee - <a href="https://www.fitzsimons.dev">Personal Site</a>
+      </div>
+      <footer style={{
+        backgroundColor: `black`, color: `white`, margin: `0 auto`,
+        padding: `1.45rem 1.0875rem`,
+      }}>
+        <div style={{
+          maxWidth: 960,
+          margin: `0 auto`
+        }}>
+          Vernon Lee - <a style={{ color: `white` }} href="https://www.fitzsimons.dev">Personal Site</a>
           <br />
           and
           <br />
-          Devin Fitzsimons - <a href="https://www.fitzsimons.dev">Personal Site</a>
+          Devin Fitzsimons - <a style={{ color: `white` }} href="https://www.fitzsimons.dev">Personal Site</a>
           <br />
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+          <a href="https://www.gatsbyjs.org" style={{ color: `white` }}>Gatsby</a>
+        </div>
+      </footer>
     </>
   )
 }

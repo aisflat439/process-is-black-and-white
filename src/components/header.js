@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        border: '.334rem solid white',
+        border: `.334rem solid white`,
         padding: `.5rem`,
       }}
     >
@@ -56,13 +56,24 @@ const Header = ({ siteTitle }) => (
         </h3>
         <h3 style={{ margin: `.5rem` }}>
           <Link
-            to="/the process/"
+            to="/the-process/"
             style={{
               color: `white`,
               textDecoration: `none`,
             }}
           >
             the process
+        </Link>
+        </h3>
+        <h3 style={{ margin: `.5rem` }}>
+          <Link
+            to="/services/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            services
         </Link>
         </h3>
       </div>
