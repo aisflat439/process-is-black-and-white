@@ -39,13 +39,14 @@ const Episodes = () => {
 
 export default Episodes
 
-  // // http: //cast.rocks/hosting/26747/feeds/6EK9V.xml
+// // http: //cast.rocks/hosting/26747/feeds/6EK9V.xml
 
-//   < div >
-//   <article>
-//     <p>The guys discuss an exciting new plan. Vernon has made tremendous progress on his spice rubs so he's beginning to look at eCommerce. Devin's background in eCommerce agency work sets up a nice opportunity for the two to work together, for the listeners. There's discussion on the when in doubt, blitz strategy as well as a confession about how they read different chapters last week. </p>
-//     <h3>Links:</h3>
-//     <p>Akimbo Podcast - <a href="https://www.akimbo.link/blog/s-3-e-2-you-re-it">Podcast episode</a></p>
-//     <p>The Mom Test - <a href="http://momtestbook.com/">Book link</a></p>
-//   </article>
-// </div >
+{/* <div>
+  <article>
+    <p>The first of our what is eCommerce and how do I get started episodes. Vernon asks some high level questions about what eCommerce is and how it works. Devin does his best to make the answers relatable to regular retail.</p>
+    <h3>Links:</h3>
+    <p>Sole Proprietorship in PA - <a href="https://lmgtfy.app/?q=sole+proprietor+in+pennsylvania/">Pennsylvania Sole Proprietorship</a></p>
+    <p>LLC in PA - <a href="https://lmgtfy.app/?q=how+do+i+start+an+llc+in+pennsylvania/">Pennsylvania LLC</a></p>
+    <p>Getting domains and other recommendations - <a href="https://www.theprocessisblackandwhite.com/services/">Services</a></p>
+  </article>
+</div> */}

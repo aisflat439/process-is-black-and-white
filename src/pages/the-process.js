@@ -13,37 +13,32 @@ const QUESTIONS = [
   {
     title: 'What are the minimum requirements to start an eCommerce business?',
     clarification: '',
-    answer: ''
+    answer: 'Really just a sole propietorship, Shopify, BigCommerce or Magento'
   },
   {
     title: 'Do I need an LLC?',
     clarification: '',
-    answer: ''
+    answer: 'Not really. If you\'re very worried about getting sued, yes.'
   },
   {
     title: 'How do I get paid?',
     clarification: '',
-    answer: ''
+    answer: 'Through your payment provider, maybe that\'s paypal, braintree or an integrated service'
   },
   {
     title: 'How does shipping work?',
     clarification: '',
-    answer: ''
+    answer: 'Your platform (Shopify), will keep gather the shipping info and you take care of mailing it.'
   },
   {
-    title: 'What can I seel through eCommerce?',
+    title: 'What can I sell through eCommerce?',
     clarification: '',
-    answer: ''
-  },
-  {
-    title: 'How are my taxes effected?',
-    clarification: '',
-    answer: ''
+    answer: 'Short answer, anything legal.'
   },
   {
     title: 'How do you purchase an item from eCommerce',
     clarification: '',
-    answer: ''
+    answer: 'Every time you\'ve bought from a website, it\'s probably been either, Shopify, BigCommerce or Magento. As a customer, you don\'t even realize.'
   },
 ]
 
