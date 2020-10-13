@@ -47,7 +47,7 @@ const Process = () => (
     <SEO title="The Process" />
     <h2>Vernon has questions... we have the answers</h2>
     {QUESTIONS.map(question => (
-      <div style={{
+      <div key={question.title.replace(' ', '-')} style={{
         padding: '.5rem',
         margin: '1rem',
         border: '2px solid black'

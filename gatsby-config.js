@@ -6,14 +6,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        google: {
-          families: [`Abril Fatface`]
-        }
-      }
-    },
-    {
       resolve: `@arshad/gatsby-theme-podcast-core`,
       options: {
         feedUrl: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,

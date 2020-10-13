@@ -6388,14 +6388,6 @@ gatsby-plugin-typescript@^2.4.18:
     "@babel/runtime" "^7.10.3"
     babel-plugin-remove-graphql-queries "^2.9.17"
 
-gatsby-plugin-web-font-loader@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-web-font-loader/-/gatsby-plugin-web-font-loader-1.0.4.tgz#c50bdb0c1980110b3fd213a5be70feb2459514c3"
-  integrity sha512-3c39bX9CcsYJQFhhmTyjuMJSqpld2rX+HsTOxP9k1PKFR4Rvo3lpzBW4d1tVpmUesR8BNL6u9eHT7/XksS1iog==
-  dependencies:
-    babel-runtime "^6.26.0"
-    webfontloader "^1.6.28"
-
 gatsby-react-router-scroll@^3.0.12:
   version "3.0.12"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-3.0.12.tgz#1c6a7c3fd2d54ec618f42a6e793ff8293070b6bc"
@@ -13404,6 +13396,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-abril-fatface@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-abril-fatface/-/typeface-abril-fatface-1.1.13.tgz#37abcd76b6f8def8436b6c3320e1e4c2b73eb50c"
+  integrity sha512-uMyti3EmzAUqR3nzyACg7892PemvZyeazJlqzvPKq2i8XoywJtxQa893iy0qRMDCmBI5F5v1mU6zjLvrFgBA6Q==
+
 unbzip2-stream@^1.0.9:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/unbzip2-stream/-/unbzip2-stream-1.4.3.tgz#b0da04c4371311df771cdc215e87f2130991ace7"
@@ -13900,11 +13897,6 @@ web-namespaces@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
-
-webfontloader@^1.6.28:
-  version "1.6.28"
-  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
-  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webpack-dev-middleware@^3.7.2:
   version "3.7.2"

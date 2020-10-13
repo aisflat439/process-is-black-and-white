@@ -27,7 +27,7 @@ const SecondPage = () => (
     <SEO title="Page two" />
     <h2>Here's the books we read and links to get them</h2>
     {BOOKS.map(book => (
-      <div style={{
+      <div key={book.title.replace(' ', '-')} style={{
         padding: '.5rem',
         margin: '1rem',
         border: '2px solid black'

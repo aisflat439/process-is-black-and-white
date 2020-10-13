@@ -33,7 +33,7 @@ const Subscribe = () => (
       <div style={{ fontSize: `2rem` }}>
         <ul style={{ marginLeft: 0, listStyle: `none`, display: `flex`, flexDirection: `row`, justifyContent: `space-between` }}>
           {SERVICES.map(service => (
-            <li style={{}}>
+            <li key={service.name.replace(' ', '-')} style={{}}>
               <a
                 style={{ color: `white`, textDecoration: `none` }}
                 target="_blank"

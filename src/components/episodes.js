@@ -25,7 +25,7 @@ const Episodes = () => {
   return (
     <div style={{ padding: `.5rem`, marginTop: `1.45rem` }}>
       {episodes.map(({ node: episode }) => (
-        <div style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}>
+        <div key={episode.title.replace(' ', '-')} style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}>
           <div style={{ border: `2px solid black`, padding: `1.5rem` }}>
             <h2 style={{ marginTop: `1rem` }}><span style={{ color: `black`, textDecoration: `none` }}>{episode.title}</span></h2>
             <div dangerouslySetInnerHTML={{ __html: episode.summary }} />
@@ -43,10 +43,11 @@ export default Episodes
 
 {/* <div>
   <article>
-    <p>The first of our what is eCommerce and how do I get started episodes. Vernon asks some high level questions about what eCommerce is and how it works. Devin does his best to make the answers relatable to regular retail.</p>
+    <p>The guys return to their usual format. Vernon is feeling good, laying the foundation for the growth of the business. Devin feels back on task and productive again after life got in the way. Discussing chapter three of Thomas Sowells book reminds the guys how complicated everything is. Another episode and another mention of Jerami Grant, he's got to be the most mentioned person on the show.</p>
     <h3>Links:</h3>
-    <p>Sole Proprietorship in PA - <a href="https://lmgtfy.app/?q=sole+proprietor+in+pennsylvania/">Pennsylvania Sole Proprietorship</a></p>
-    <p>LLC in PA - <a href="https://lmgtfy.app/?q=how+do+i+start+an+llc+in+pennsylvania/">Pennsylvania LLC</a></p>
-    <p>Getting domains and other recommendations - <a href="https://www.theprocessisblackandwhite.com/services/">Services</a></p>
+    <p>The Carters - <a href="https://www.youtube.com/watch?v=54DZGlJLAAc/">Boss</a></p>
+    <p>TJ McConnell - <a href="https://en.wikipedia.org/wiki/T._J._McConnell/">Player wiki</a></p>
+    <p>LeBron making the right decision - <a href="https://youtu.be/N7zipKFp3SA?t=130">YouTube link</a></p>
+    <p>Optionality - <a href="https://www.startupsfortherestofus.com/episodes/episode-512-the-power-of-options">Startups for the rest of us</a></p>
   </article>
 </div> */}
