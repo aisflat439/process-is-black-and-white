@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1140,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
         padding: `1.45rem 1.0875rem`,
       }}>
         <div style={{
-          maxWidth: 960,
+          maxWidth: 1140,
           margin: `0 auto`
         }}>
           Vernon Lee - <a style={{ color: `white` }} href="https://www.fitzsimons.dev">Personal Site</a>
