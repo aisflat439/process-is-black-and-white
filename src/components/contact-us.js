@@ -56,6 +56,7 @@ const ContactUs = ({ data }) => {
     })
       .then(() => {
         setFormValues(initialValues);
+        setHasSubmitted(true)
       })
       .catch((error) => alert(error));
     e.preventDefault()
