@@ -27,6 +27,17 @@ const StyledForm = styled.form`
   }
 `;
 
+const StyledDiv = styled.div`
+  background-color: black;
+  color: white;
+  padding: .5rem;
+  display: flex;
+
+  @media (max-width: 900px) {
+    margin-bottom: 1.5rem;
+  }
+`;
+
 const StyledLabel = styled.label`
   flex: 1;
 `;
@@ -70,12 +81,7 @@ const ContactUs = ({ data }) => {
   }
 
   return (
-    <div style={{
-      backgroundColor: 'black',
-      color: "white",
-      padding: '.5rem',
-      display: 'flex',
-    }}>
+    <StyledDiv>
       <div
         style={{
           display: 'flex',
@@ -121,7 +127,7 @@ const ContactUs = ({ data }) => {
           </>
         )}
       </div>
-    </div >
+    </StyledDiv>
   )
 };
 

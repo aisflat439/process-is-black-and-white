@@ -25,6 +25,16 @@ const ContactContainer = styled.div`
   }
 `;
 
+const StyledDiv = styled.div`
+  max-width: 70vw;
+  margin: auto;
+  margin-bottom: 1.45rem;
+
+  @media (max-width: 900px) {
+    max-width: 85vw;
+  }
+`;
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
@@ -40,9 +50,9 @@ const IndexPage = ({ data }) => (
     <aside>
       <Subscribe />
     </aside>
-    <div style={{ maxWidth: `70vw`, margin: `auto`, marginBottom: `1.45rem` }}>
+    <StyledDiv>
       <Episodes />
-    </div>
+    </StyledDiv>
   </Layout >
 )
 

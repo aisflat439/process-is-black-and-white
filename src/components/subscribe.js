@@ -1,4 +1,40 @@
 import React from "react"
+import styled from "styled-components"
+
+const StyledSection = styled.section`
+  background-color: black; 
+  color: white; 
+  border: 2px solid white; 
+  padding: .5rem;
+
+  h4 {
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+  }
+
+  li {
+    text-align: center;
+   
+    @media (max-width: 900px) {
+      flex-direction: column;
+      padding: .5rem;
+    }
+  }
+`;
+
+const StyledList = styled.ul`
+  margin-left: 0; 
+  list-style: none; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+`;
 
 const SERVICES = [
   {
@@ -24,18 +60,18 @@ const SERVICES = [
 ]
 
 const Subscribe = () => (
-  <section style={{ backgroundColor: `black`, color: `white`, border: `2px solid white`, padding: `.5rem` }}>
+  <StyledSection>
     <div style={{ border: `.334rem solid white`, padding: `1.5rem` }}>
       <h4 style={{
         fontWeight: 400,
         fontFamily: `Abril Fatface`,
       }}>Subscribe</h4>
       <div style={{ fontSize: `2rem` }}>
-        <ul style={{ marginLeft: 0, listStyle: `none`, display: `flex`, flexDirection: `row`, justifyContent: `space-between` }}>
+        <StyledList>
           {SERVICES.map(service => (
             <li key={service.name.replace(' ', '-')} style={{}}>
               <a
-                style={{ color: `white`, textDecoration: `none` }}
+                style={{ color: `white`, textDecoration: `none`, lineHeight: '125%' }}
                 target="_blank"
                 href={service.link}
                 rel="noopener noreferrer"
@@ -44,10 +80,10 @@ const Subscribe = () => (
               </a>
             </li>
           ))}
-        </ul>
+        </StyledList>
       </div>
     </div>
-  </section >
+  </StyledSection>
 )
 
 export default Subscribe

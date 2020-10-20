@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-
 const Episodes = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
@@ -43,11 +42,10 @@ export default Episodes
 
 {/* <div>
   <article>
-    <p>The guys return to their usual format. Vernon is feeling good, laying the foundation for the growth of the business. Devin feels back on task and productive again after life got in the way. Discussing chapter three of Thomas Sowells book reminds the guys how complicated everything is. Another episode and another mention of Jerami Grant, he's got to be the most mentioned person on the show.</p>
+    <p>In the second eCommerce episode the guys talk discuss fundamentals. The discussion centers around how different pages of a website relate to merchandising a brick and mortar store. Vernon has a name for his business a URL and some new goals for two weeks from now. Devin begins to discuss SEO and how to get traffic to your site.</p>
     <h3>Links:</h3>
-    <p>The Carters - <a href="https://www.youtube.com/watch?v=54DZGlJLAAc/">Boss</a></p>
-    <p>TJ McConnell - <a href="https://en.wikipedia.org/wiki/T._J._McConnell/">Player wiki</a></p>
-    <p>LeBron making the right decision - <a href="https://youtu.be/N7zipKFp3SA?t=130">YouTube link</a></p>
-    <p>Optionality - <a href="https://www.startupsfortherestofus.com/episodes/episode-512-the-power-of-options">Startups for the rest of us</a></p>
+    <p>Learning SEO - <a href="https://ahrefs.com/academy/">Hrefs</a></p>
+    <p>Start your store - <a href="https://www.shopify.com/start/">Shopify</a></p>
+    <p>Contact us - <a href="https://www.theprocessisblackandwhite.com/">Our site</a></p>
   </article>
 </div> */}
