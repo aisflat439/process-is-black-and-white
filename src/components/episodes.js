@@ -42,10 +42,12 @@ export default Episodes
 
 {/* <div>
   <article>
-    <p>In the second eCommerce episode the guys talk discuss fundamentals. The discussion centers around how different pages of a website relate to merchandising a brick and mortar store. Vernon has a name for his business a URL and some new goals for two weeks from now. Devin begins to discuss SEO and how to get traffic to your site.</p>
+    <p>Back to the check in format Vernon and Devin give updates about the work they've done. Vernon is feeling productive and is soaking up information. Devin is making some headway publishing a new blog post and updating his personal sites branding.</p>
     <h3>Links:</h3>
-    <p>Learning SEO - <a href="https://ahrefs.com/academy/">Hrefs</a></p>
-    <p>Start your store - <a href="https://www.shopify.com/start/">Shopify</a></p>
-    <p>Contact us - <a href="https://www.theprocessisblackandwhite.com/">Our site</a></p>
+    <p>Akimbo podcast - <a href="https://www.akimbo.link/blog/s-4-e-12-fooled-by-spectrum">Podcase Episode</a></p>
+    <p>Seth Godin - <a href="https://www.sethgodin.com/">Personal Site</a></p>
+    <p>Discrimination and Disparities - <a href="https://www.amazon.com/Discrimination-Disparities-Thomas-Sowell/dp/154164560X">Book</a></p>
+    <p>Devin's redesigned site - <a href="https://www.fitzsimons.dev/">Website</a></p>
+    <p>Traction - <a href="https://www.amazon.com/Traction-Startup-Achieve-Explosive-Customer/dp/1591848369">New Book!</a></p>
   </article>
 </div> */}
