@@ -10,15 +10,17 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
             author
+            description
+            image
+            siteUrl
+            title
           }
         }
       }
@@ -26,6 +28,8 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const cardImage = `${site.siteMetadata.siteUrl}${image || site.siteMetadata.image}`
+  const seoTitle = title || site.siteMetadata.title
 
   return (
     <Helmet
@@ -40,8 +44,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `image`,
+          content: cardImage,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: seoTitle,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
         },
         {
           property: `og:description`,
@@ -61,11 +73,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: seoTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: cardImage,
         },
       ].concat(meta)}
     />
@@ -76,12 +92,15 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: ``,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
+  image: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
+  siteUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }
 
