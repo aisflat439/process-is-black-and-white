@@ -48,6 +48,10 @@ function SEO({ description, lang, meta, title, image }) {
           content: cardImage,
         },
         {
+          name: `og:image`,
+          content: cardImage,
+        },
+        {
           property: `og:title`,
           content: seoTitle,
         },
