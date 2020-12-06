@@ -1,8 +1,12 @@
+const DESCRIPTION = `Two friends discuss starting a their respective businesses, and whatever that journey entails.Each week, they read a few chapters from a book, discuss what they read and how that relates to their businesses.New episodes every Tuesday.`
+
 module.exports = {
   siteMetadata: {
     title: `The Process is Black and White`,
-    description: `Two friends discuss starting a their respective businesses along with whatever their journey entails.`,
-    author: `@fitzsimonsdev`,
+    description: DESCRIPTION,
+    author: `@process_is`,
+    image: '/images/logo2.png',
+    siteUrl: 'https://www.theprocessisblackandwhite.com'
   },
   plugins: [
     {
@@ -11,8 +15,8 @@ module.exports = {
         feedUrl: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,
         podcast: {
           name: `The Process is Black and White`,
-          description: `Two friends who are starting businesses have a weekly chat. They review a book they're reading, and schedule their weeks`,
-          image: `assets/images/podcast.jpg`,
+          description: DESCRIPTION,
+          image: `/images/logo2.png`,
           social: [
             {
               name: `Apple Podcast`,
