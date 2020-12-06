@@ -1,4 +1,4 @@
-const DESCRIPTION = `Two friends discuss starting a their respective businesses, and whatever that journey entails.Each week, they read a few chapters from a book, discuss what they read and how that relates to their businesses.New episodes every Tuesday.`
+const DESCRIPTION = `Two friends discuss starting a their respective businesses, and whatever that journey entails.Each week, they read a few chapters from a book, discuss what they read and how that relates to their businesses. New episodes every Tuesday.`
 
 module.exports = {
   siteMetadata: {
