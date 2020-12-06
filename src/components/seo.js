@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
   const cardImage = `${site.siteMetadata.siteUrl}${image || site.siteMetadata.image}`
-  const seoTitle = title || site.siteMetadata.title
+  const seoTitle = title === "Home" ? site.siteMetadata.title : title || site.siteMetadata.title
 
   return (
     <Helmet
@@ -45,6 +45,10 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `image`,
+          content: cardImage,
+        },
+        {
+          name: `og:image`,
           content: cardImage,
         },
         {
@@ -82,6 +86,10 @@ function SEO({ description, lang, meta, title, image }) {
         {
           name: `twitter:image`,
           content: cardImage,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: 'Show logo for Process is black and white',
         },
       ].concat(meta)}
     />
