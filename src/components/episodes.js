@@ -32,22 +32,23 @@ const Episodes = () => {
         </div>
       ))
       }
+      {/* <div>
+        <article>
+          <h3>Chapters 1-3 of "The Color of Money"</h3>
+          <p>Join us as we begin to The Color of Money. The history that this book sheds light on is important and untold. We learn about the tricks and scams that have plagued black banking and consider what that means for the shows goals. So far, this is story provides vital context for us as people, and entrepreneurs.</p>
+          <p>Vernon has had a successful week with social media, starting the conversation and the show is interacting with lots of businesses working the process. Check them out on links below. Vernon is making a special effort to join <a href="https://www.instagram.com/mad_lashed_/">Mad Lashed's</a> raffle and we hope you do too!</p>
+          <h3>Links:</h3>
+          <p>Our new book - <a href="https://www.amazon.com/Color-Money-Black-Racial-Wealth/dp/0674970950">The Color Of Money</a></p>
+          <p>BD the Chef - <a href="https://www.instagram.com/bdthechef/">Instagram</a></p>
+          <p>J~Velor - <a href="https://www.instagram.com/jvel.our/">Instagram</a></p>
+          <p>Mad Lashed - <a href="https://www.instagram.com/mad_lashed_/">Instagram</a></p>
+          <p>The Missing Plug - <a href="https://www.facebook.com/The-Missing-Plug-310095162476018/">Facebook</a></p>
+        </article>
+      </div> */}
     </div >
   )
 };
 
 export default Episodes
 
-// // http: //cast.rocks/hosting/26747/feeds/6EK9V.xml
-
-{/* <div>
-  <article>
-    <p>Back to the check in format Vernon and Devin give updates about the work they've done. Vernon is feeling productive and is soaking up information. Devin is making some headway publishing a new blog post and updating his personal sites branding.</p>
-    <h3>Links:</h3>
-    <p>Akimbo podcast - <a href="https://www.akimbo.link/blog/s-4-e-12-fooled-by-spectrum">Podcase Episode</a></p>
-    <p>Seth Godin - <a href="https://www.sethgodin.com/">Personal Site</a></p>
-    <p>Discrimination and Disparities - <a href="https://www.amazon.com/Discrimination-Disparities-Thomas-Sowell/dp/154164560X">Book</a></p>
-    <p>Devin's redesigned site - <a href="https://www.fitzsimons.dev/">Website</a></p>
-    <p>Traction - <a href="https://www.amazon.com/Traction-Startup-Achieve-Explosive-Customer/dp/1591848369">New Book!</a></p>
-  </article>
-</div> */}
+  // // http: //cast.rocks/hosting/26747/feeds/6EK9V.xml

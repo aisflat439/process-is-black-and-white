@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BOOKS = [
+export const BOOKS = [
   {
     title: 'The Color of Money',
     author: 'Mehrsa Baradaran',

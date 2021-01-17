@@ -9,11 +9,11 @@ const Typography = createGlobalStyle`
     src: url(${font});
   }
   @font-face {
-    font-family: Roboto;
+    font-family: Robo;
     src: url(${robo});
   }
-  html, body {
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  html, body, h3 {
+    font-family: Robo, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
   }
 `;
