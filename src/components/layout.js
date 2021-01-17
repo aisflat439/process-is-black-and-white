@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Typography from '../styles/Typography';
+import SiteStyles from '../styles/SiteStyles';
 import Header from "./header"
 import "./layout.css"
 
@@ -27,14 +28,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Typography />
+      <SiteStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1140,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
       </div>
       <footer style={{

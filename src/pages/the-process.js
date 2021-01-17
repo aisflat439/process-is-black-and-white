@@ -45,23 +45,25 @@ const QUESTIONS = [
 const Process = () => (
   <Layout>
     <SEO title="The Process" />
-    <h2>Vernon has questions... we have the answers</h2>
-    {QUESTIONS.map(question => (
-      <div key={question.title.replace(' ', '-')} style={{
-        padding: '.5rem',
-        margin: '1rem',
-        border: '2px solid black'
-      }}>
-        <div style={{
-          padding: '2rem',
+    <div className="site-margin">
+      <h2>Vernon has questions... we have the answers</h2>
+      {QUESTIONS.map(question => (
+        <div key={question.title.replace(' ', '-')} style={{
+          padding: '.5rem',
+          margin: '1rem',
           border: '2px solid black'
         }}>
-          <h3>{question.title} &nbsp;&nbsp;&nbsp;<small>{question.clarification}</small></h3>
-          <p>{question.answer}</p>
+          <div style={{
+            padding: '2rem',
+            border: '2px solid black'
+          }}>
+            <h3>{question.title} &nbsp;&nbsp;&nbsp;<small>{question.clarification}</small></h3>
+            <p>{question.answer}</p>
+          </div>
         </div>
-      </div>
-    ))}
-    <Link to="/">Go back to the homepage</Link>
+      ))}
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 

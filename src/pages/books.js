@@ -25,23 +25,25 @@ const BOOKS = [
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <h2>Here's the books we read and links to get them</h2>
-    {BOOKS.map(book => (
-      <div key={book.title.replace(' ', '-')} style={{
-        padding: '.5rem',
-        margin: '1rem',
-        border: '2px solid black'
-      }}>
-        <div style={{
-          padding: '2rem',
+    <div className="site-margin">
+      <h2>Here's the books we read and links to get them</h2>
+      {BOOKS.map(book => (
+        <div key={book.title.replace(' ', '-')} style={{
+          padding: '.5rem',
+          margin: '1rem',
           border: '2px solid black'
         }}>
-          <h3>{book.title} &nbsp;&nbsp;&nbsp;<small>{book.author}</small></h3>
-          <a href={book.link} target="_blank" rel="noreferrer">Buy it here</a>
+          <div style={{
+            padding: '2rem',
+            border: '2px solid black'
+          }}>
+            <h3>{book.title} &nbsp;&nbsp;&nbsp;<small>{book.author}</small></h3>
+            <a href={book.link} target="_blank" rel="noreferrer">Buy it here</a>
+          </div>
         </div>
-      </div>
-    ))}
-    <Link to="/">Go back to the homepage</Link>
+      ))}
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 
