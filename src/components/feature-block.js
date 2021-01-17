@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+
+import AudioCard from "audiocard"
 import { BOOKS } from '../pages/books'
 
 const StyledSection = styled.section`
@@ -71,7 +73,13 @@ const FeatureBlock = () => (
         </div>
         <div className="small-feature-two chevron">
           <div>
-            Coming soon a player right here!
+            <AudioCard
+              title="Episode 25"
+              art="https://www.theprocessisblackandwhite.com/images/logo2.png"
+              source="http://cast.rocks/hosting/26747/Episode-25.mp3"
+              skipBackSeconds={10}
+              skipForwardSeconds={30}
+            />
           </div>
         </div>
         <div className="large-feature chevron">
