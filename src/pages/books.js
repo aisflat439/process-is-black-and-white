@@ -34,7 +34,7 @@ const BOOKS = [
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="The Books" />
     <div className="site-margin">
       <h2>Here's the books we read and links to get them</h2>
       {BOOKS.map(book => (
