@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
 import ContactUs from "../components/contact-us"
 import FeatureBlock from "../components/feature-block"
-import AudioCard from "audiocard"
 
 const ContactContainer = styled.div`
   display: flex;

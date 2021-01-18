@@ -67,13 +67,13 @@ const Header = ({ siteTitle }) => (
         </h3>
         <h3 style={{ margin: `.5rem` }}>
           <Link
-            to="/the-services/"
+            to="/award-winners/"
             style={{
               color: `white`,
               textDecoration: `none`,
             }}
           >
-            the services
+            award winners
         </Link>
         </h3>
       </div>
