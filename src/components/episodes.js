@@ -34,15 +34,12 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <h3>Chapters 1-3 of "The Color of Money"</h3>
-          <p>Join us as we begin to The Color of Money. The history that this book sheds light on is important and untold. We learn about the tricks and scams that have plagued black banking and consider what that means for the shows goals. So far, this is story provides vital context for us as people, and entrepreneurs.</p>
-          <p>Vernon has had a successful week with social media, starting the conversation and the show is interacting with lots of businesses working the process. Check them out on links below. Vernon is making a special effort to join <a href="https://www.instagram.com/mad_lashed_/">Mad Lashed's</a> raffle and we hope you do too!</p>
+          <h3>Chapters 4-6 of "The Color of Money"</h3>
+          <p>We continue with The Color of Money and are reminded of the importance of this shows core goal. The history of banking is rife with conflict in the black community. As we support each other we have to be aware of history, and prepared for the future.</p>
+          <p>The guys also discuss at length learning about and strategy around YouTube. It's not a platform they know a lot about, but they're both excited to meet their customers where they're at. </p>
           <h3>Links:</h3>
-          <p>Our new book - <a href="https://www.amazon.com/Color-Money-Black-Racial-Wealth/dp/0674970950">The Color Of Money</a></p>
+          <p>Our new book - <a href="https://www.amazon.com/gp/product/0674237471/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0674237471&linkCode=as2&tag=theprocessisb-20&linkId=318b9d1f2ff0de7a04c8eb2bb1ed96e6">The Color Of Money</a></p>
           <p>BD the Chef - <a href="https://www.instagram.com/bdthechef/">Instagram</a></p>
-          <p>J~Velor - <a href="https://www.instagram.com/jvel.our/">Instagram</a></p>
-          <p>Mad Lashed - <a href="https://www.instagram.com/mad_lashed_/">Instagram</a></p>
-          <p>The Missing Plug - <a href="https://www.facebook.com/The-Missing-Plug-310095162476018/">Facebook</a></p>
         </article>
       </div> */}
     </div >
