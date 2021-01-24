@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const AWARD_WINNERS = [
@@ -15,7 +14,7 @@ const AWARD_WINNERS = [
 ]
 
 const Process = () => (
-  <Layout>
+  <>
     <SEO title="The Services" />
     <div className="site-margin">
       <h2>Where should you buy what and why?</h2>
@@ -37,7 +36,7 @@ const Process = () => (
       ))}
       <Link to="/">Go back to the homepage</Link>
     </div>
-  </Layout>
+  </>
 )
 
 export default Process

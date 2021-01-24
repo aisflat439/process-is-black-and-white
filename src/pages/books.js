@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const BOOKS = [
@@ -33,7 +32,7 @@ export const BOOKS = [
 ]
 
 const SecondPage = () => (
-  <Layout>
+  <>
     <SEO title="The Books" />
     <div className="site-margin">
       <h2>Here's the books we read and links to get them</h2>
@@ -54,7 +53,7 @@ const SecondPage = () => (
       ))}
       <Link to="/">Go back to the homepage</Link>
     </div>
-  </Layout>
+  </>
 )
 
 export default SecondPage

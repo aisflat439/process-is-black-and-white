@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const QUESTIONS = [
@@ -43,7 +42,7 @@ const QUESTIONS = [
 ]
 
 const Process = () => (
-  <Layout>
+  <>
     <SEO title="The Process" />
     <div className="site-margin">
       <h2>Vernon has questions... we have the answers</h2>
@@ -64,7 +63,7 @@ const Process = () => (
       ))}
       <Link to="/">Go back to the homepage</Link>
     </div>
-  </Layout>
+  </>
 )
 
 export default Process

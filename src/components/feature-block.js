@@ -18,7 +18,11 @@ const StyledSection = styled.section`
     grid-gap: 1.5rem;
     grid-template-columns: [col1-start] 20fr  [col2-start] 20fr  [col3-start] 60fr [col3-end];
     grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
-    min-height: 500px
+    min-height: 500px;
+
+    @media only screen and (max-width: 750px)  {
+      display: block
+    }
   }
 
   .small-feature-one {
@@ -42,6 +46,9 @@ const StyledSection = styled.section`
     border: .334rem solid white; 
     padding: .5rem;
     display: flex;
+    @media only screen and (max-width: 750px)  {
+        margin-bottom: 1.5rem;      
+    }
     
     > div {
       background-color: white; 
@@ -72,13 +79,17 @@ const FeatureBlock = () => (
           </div>
         </div>
         <div className="small-feature-two chevron">
-          <div>
+          <div style={{ overflow: 'hidden' }}>
             <AudioCard
               title="Episode 25"
               art="https://www.theprocessisblackandwhite.com/images/logo2.png"
               source="http://cast.rocks/hosting/26747/Episode-25.mp3"
               skipBackSeconds={10}
               skipForwardSeconds={30}
+              background="black"
+              color="white"
+              progressBarBackground="white"
+              progressBarCompleteBackground="darkGray"
             />
           </div>
         </div>

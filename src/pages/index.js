@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
 import Episodes from "../components/episodes"
 import SEO from "../components/seo"
 import Subscribe from "../components/subscribe"
@@ -37,7 +36,7 @@ const StyledDiv = styled.div`
 `;
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <div className="site-margin">
       <article>
@@ -63,7 +62,7 @@ const IndexPage = ({ data }) => (
         <Episodes />
       </StyledDiv>
     </div>
-  </Layout >
+  </ >
 )
 
 export const query = graphql`
