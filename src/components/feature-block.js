@@ -59,13 +59,19 @@ const StyledSection = styled.section`
 
 `;
 
-const AWARD_WINNER = {
+const AWARD_WINNER = [{
+  name: 'Rodney Burgess',
+  company: 'Late Bloomer Cinema',
+  website: 'https://www.instagram.com/latebloomercinema/',
+  about: 'Rodney is a soft spoken but hard working video director based in Philadelphia. He has transitioned from chef to entrepenuer with his company Late Bloomer Cinema. We discuss what it takes to go from dreams to goals and how putting in the effort creates the right outcomes, no matter how old you are when you start.',
+  episode: '31'
+}, {
   name: 'Michael Cunningham',
   company: 'Kingdom Keepers',
   website: 'https://www.kingdomkeepersoutreach.org/',
   about: 'Michael is a husband, father, founder and entrepreneur making a difference in the lives of at risk folks in our community. He and his team have grown Kingdom Keepers, a non profit that gets shoes and food into the hands of folks facing housing insecurity. Join us this week as he reflects on his story and tells us about how his process of going from wantrepreneur to entrepreneur evolved.',
   episode: '25'
-}
+}]
 
 const FeatureBlock = () => (
   <StyledSection>
@@ -96,9 +102,9 @@ const FeatureBlock = () => (
         <div className="large-feature chevron">
           <div>
             <h3>Jerami Grant Award Winner</h3>
-            <p>{AWARD_WINNER.name} - <a href={AWARD_WINNER.website} target="_blank">{AWARD_WINNER.company}</a></p>
-            <p>{AWARD_WINNER.about}</p>
-            <p>Listen to his story on episode {AWARD_WINNER.episode}</p>
+            <p>{AWARD_WINNER[0].name} - <a href={AWARD_WINNER[0].website} target="_blank">{AWARD_WINNER[0].company}</a></p>
+            <p>{AWARD_WINNER[0].about}</p>
+            <p>Listen to his story on episode {AWARD_WINNER[0].episode}</p>
           </div>
         </div>
       </div>
