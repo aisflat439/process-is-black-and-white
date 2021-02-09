@@ -3,7 +3,14 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
-const AWARD_WINNERS = [
+export const AWARD_WINNERS = [
+  {
+    name: 'Rodney Burgess',
+    company: 'Late Bloomer Cinema',
+    website: 'https://www.instagram.com/latebloomercinema/',
+    about: 'Rodney is a soft spoken but hard working video director based in Philadelphia. He has transitioned from chef to entrepenuer with his company Late Bloomer Cinema. We discuss what it takes to go from dreams to goals and how putting in the effort creates the right outcomes, no matter how old you are when you start.',
+    episode: '31'
+  },
   {
     name: 'Michael Cunningham',
     company: 'Kingdom Keepers',

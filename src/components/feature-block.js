@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import AudioCard from "audiocard"
 import { BOOKS } from '../pages/books'
+import { AWARD_WINNERS } from "../pages/award-winners";
 
 const StyledSection = styled.section`
   background-color: black;
@@ -56,22 +57,7 @@ const StyledSection = styled.section`
       padding: 1.5rem;
     }
   }
-
 `;
-
-const AWARD_WINNER = [{
-  name: 'Rodney Burgess',
-  company: 'Late Bloomer Cinema',
-  website: 'https://www.instagram.com/latebloomercinema/',
-  about: 'Rodney is a soft spoken but hard working video director based in Philadelphia. He has transitioned from chef to entrepenuer with his company Late Bloomer Cinema. We discuss what it takes to go from dreams to goals and how putting in the effort creates the right outcomes, no matter how old you are when you start.',
-  episode: '31'
-}, {
-  name: 'Michael Cunningham',
-  company: 'Kingdom Keepers',
-  website: 'https://www.kingdomkeepersoutreach.org/',
-  about: 'Michael is a husband, father, founder and entrepreneur making a difference in the lives of at risk folks in our community. He and his team have grown Kingdom Keepers, a non profit that gets shoes and food into the hands of folks facing housing insecurity. Join us this week as he reflects on his story and tells us about how his process of going from wantrepreneur to entrepreneur evolved.',
-  episode: '25'
-}]
 
 const FeatureBlock = () => (
   <StyledSection>
@@ -102,9 +88,9 @@ const FeatureBlock = () => (
         <div className="large-feature chevron">
           <div>
             <h3>Jerami Grant Award Winner</h3>
-            <p>{AWARD_WINNER[0].name} - <a href={AWARD_WINNER[0].website} target="_blank">{AWARD_WINNER[0].company}</a></p>
-            <p>{AWARD_WINNER[0].about}</p>
-            <p>Listen to his story on episode {AWARD_WINNER[0].episode}</p>
+            <p>{AWARD_WINNERS[0].name} - <a href={AWARD_WINNERS[0].website} target="_blank">{AWARD_WINNERS[0].company}</a></p>
+            <p>{AWARD_WINNERS[0].about}</p>
+            <p>Listen to his story on episode {AWARD_WINNERS[0].episode}</p>
           </div>
         </div>
       </div>
