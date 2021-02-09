@@ -75,7 +75,7 @@ const FeatureBlock = () => (
             <AudioCard
               title="Episode 25"
               art="https://www.theprocessisblackandwhite.com/images/logo2.png"
-              source="http://cast.rocks/hosting/26747/Episode-25.mp3"
+              source="https://cast.rocks/hosting/26747/Episode-25.mp3"
               skipBackSeconds={10}
               skipForwardSeconds={30}
               background="black"

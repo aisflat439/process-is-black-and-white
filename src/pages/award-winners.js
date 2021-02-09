@@ -8,7 +8,7 @@ export const AWARD_WINNERS = [
     name: 'Rodney Burgess',
     company: 'Late Bloomer Cinema',
     website: 'https://www.instagram.com/latebloomercinema/',
-    about: 'Rodney is a soft spoken but hard working video director based in Philadelphia. He has transitioned from chef to entrepenuer with his company Late Bloomer Cinema. We discuss what it takes to go from dreams to goals and how putting in the effort creates the right outcomes, no matter how old you are when you start.',
+    about: 'Rodney is a soft spoken but hard working video director based in Philadelphia. He has transitioned from chef to entrepreneur with his company Late Bloomer Cinema. We discuss what it takes to go from dreams to goals and how putting in the effort creates the right outcomes, no matter how old you are when you start.',
     episode: '31'
   },
   {
@@ -24,7 +24,8 @@ const Process = () => (
   <>
     <SEO title="The Services" />
     <div className="site-margin">
-      <h2>Where should you buy what and why?</h2>
+      <h2>Jerami Grant award winners.</h2>
+      <p>Each month we invite on a guest who is creating their own opportunity for themselves themselves in their chosen field. Our selections range from artists to entrepreneurs, with non profits and everything in between.</p>
       {AWARD_WINNERS.map(winner => (
         <div key={winner.name.replace(' ', '-')} style={{
           padding: '.5rem',
