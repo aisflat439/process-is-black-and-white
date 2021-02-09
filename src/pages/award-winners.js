@@ -20,12 +20,14 @@ export const AWARD_WINNERS = [
   }
 ]
 
+const SEO_TEXT = 'Each month we invite on a guest who is creating their own opportunity for themselves themselves in their chosen field. Our selections range from artists to entrepreneurs, with non profits and everything in between.'
+
 const Process = () => (
   <>
-    <SEO title="The Services" />
+    <SEO title="Jerami Grant Award Winners" description={SEO_TEXT} />
     <div className="site-margin">
       <h2>Jerami Grant award winners.</h2>
-      <p>Each month we invite on a guest who is creating their own opportunity for themselves themselves in their chosen field. Our selections range from artists to entrepreneurs, with non profits and everything in between.</p>
+      <p>{SEO_TEXT}</p>
       {AWARD_WINNERS.map(winner => (
         <div key={winner.name.replace(' ', '-')} style={{
           padding: '.5rem',
