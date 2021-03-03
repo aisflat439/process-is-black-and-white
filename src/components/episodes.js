@@ -36,16 +36,13 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <h3>Jerami Grant Award Winner Rodney </h3>
-          <p>We're excited to have Rodney from Late Bloomer Cinema with us. Join us as we learn about his story and the transition from Chef to Videographer. He walks us through how even though he was a success in the restaurant industry, his hopes and goals sent him in another direction.</p>
-          <br />
-          <p>"You gotta make your own way. You gotta find a way. You gotta get it done. It's hard. It's tough. That's what I tell my students every day in class. I've been very fortunate. Some people might call me a hardhead, but I'm not going to let other people dictate to me who I should be or the stories I should tell. That doesn't register with me." -- Spike Lee</p>
-          <p>The chapters for "The Color of Money" this week were 10-12.</p>
+          <p>We begin the new book, "The Hot Hand: The Mystery and Science of Streaks".</p>
+          <p>The guys discuss the new book. They both fondly recall NBA Jam, talk about how hot streaks and how evolution happens when rules change. Vernon drops the amazing line, "the internet is the 3pt line of society". We then get to hear about how 24hundredthemovement is doing by the numbers. They're shooting their shot, and it's exciting to grow, but the reality is that business takes time and the numbers, for now, are small.</p>
           <h3>Links:</h3>
+          <p>Our new book <a href="https://amzn.to/37GgUxe">The Hot Hand<a/></p>
+          <p>NBA Jam - <a href="https://en.wikipedia.org/wiki/NBA_Jam">Wikipedia</a></p>
           <p>24hundredthemovement - <a href="https://24hundredthemovement.com/">Website</a></p>
-          <p>Hank Aaron - <a href="https://en.wikipedia.org/wiki/Hank_Aaron">Wikipedia</a></p>
-          <p>This months book - <a href="https://www.amazon.com/gp/product/0674237471/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0674237471&linkCode=as2&tag=theprocessisb-20&linkId=318b9d1f2ff0de7a04c8eb2bb1ed96e6">The Color Of Money</a></p>
-        </article>
+          </article>
       </div> */}
     </div >
   )

@@ -5,6 +5,11 @@ import SEO from "../components/seo"
 
 export const BOOKS = [
   {
+    title: 'The Hot Hand: The Mystery and Science of Streaks ',
+    author: 'Ben Cohen',
+    link: 'https://amzn.to/37GgUxe'
+  },
+  {
     title: 'The Color of Money',
     author: 'Mehrsa Baradaran',
     link: 'https://www.amazon.com/gp/product/0674237471/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0674237471&linkCode=as2&tag=theprocessisb-20&linkId=318b9d1f2ff0de7a04c8eb2bb1ed96e6'
