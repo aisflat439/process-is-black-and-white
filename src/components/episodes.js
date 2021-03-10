@@ -36,12 +36,11 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <p>We begin the new book, "The Hot Hand: The Mystery and Science of Streaks".</p>
-          <p>The guys discuss the new book. They both fondly recall NBA Jam, talk about how hot streaks and how evolution happens when rules change. Vernon drops the amazing line, "the internet is the 3pt line of society". We then get to hear about how 24hundredthemovement is doing by the numbers. They're shooting their shot, and it's exciting to grow, but the reality is that business takes time and the numbers, for now, are small.</p>
+          <p>Chapter Two of the "The Hot Hand: The Mystery and Science of Streaks".</p>
+          <p>Lots of reflection on the new book this week. Both of the guys reflect on how getting started, heat checks and Shakespeare apply in their daily lives. This week is all about the book club, and how it relates to every day life. If you haven't done so yet, join the book club now and come along. It's a really fun book!</p>
           <h3>Links:</h3>
           <p>Our new book <a href="https://amzn.to/37GgUxe">The Hot Hand<a/></p>
-          <p>NBA Jam - <a href="https://en.wikipedia.org/wiki/NBA_Jam">Wikipedia</a></p>
-          <p>24hundredthemovement - <a href="https://24hundredthemovement.com/">Website</a></p>
+          <p>Eddie Murphy - <a href="https://en.wikipedia.org/wiki/Eddie_Murphy">Wikipedia</a></p>
           </article>
       </div> */}
     </div >

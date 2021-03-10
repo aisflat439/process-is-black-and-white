@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
           fontSize: `3rem`,
           fontWeight: 400,
           margin: 0,
-          fontFamily: `AbrilFatface`,
+          // fontFamily: `AbrilFatface`,
         }}>
           <Link
             to="/"
