@@ -2,8 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import AudioCard from "audiocard"
-import { BOOKS } from '../pages/books'
-import { AWARD_WINNERS } from "../pages/award-winners";
+import { BOOKS, AWARD_WINNERS } from '../assets/data'
 
 const StyledSection = styled.section`
   background-color: black;
@@ -65,7 +64,7 @@ const FeatureBlock = () => (
       <div className="feature-block">
         <div className="small-feature-one chevron">
           <div>
-            <h2>This months book</h2>
+            <h3>This months book</h3>
             <h3>{BOOKS[0].title} &nbsp;&nbsp;&nbsp;<br /><small>{BOOKS[0].author}</small></h3>
             <a href={BOOKS[0].link} target="_blank" rel="noreferrer">Buy it here</a>
           </div>
@@ -88,7 +87,7 @@ const FeatureBlock = () => (
         <div className="large-feature chevron">
           <div>
             <h3>Jerami Grant Award Winner</h3>
-            <p>{AWARD_WINNERS[0].name} - <a href={AWARD_WINNERS[0].website} target="_blank">{AWARD_WINNERS[0].company}</a></p>
+            <p>{AWARD_WINNERS[0].name} - <a href={AWARD_WINNERS[0].website} target="_blank" rel="noreferrer">{AWARD_WINNERS[0].company}</a></p>
             <p>{AWARD_WINNERS[0].about}</p>
             <p>Listen to his story on episode {AWARD_WINNERS[0].episode}</p>
           </div>

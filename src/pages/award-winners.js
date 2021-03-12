@@ -2,23 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import SEO from "../components/seo"
-
-export const AWARD_WINNERS = [
-  {
-    name: 'Rodney Burgess',
-    company: 'Late Bloomer Cinema',
-    website: 'https://www.instagram.com/latebloomercinema/',
-    about: 'Rodney is a soft spoken but hard working video director based in Philadelphia. He has transitioned from chef to entrepreneur with his company Late Bloomer Cinema. We discuss what it takes to go from dreams to goals and how putting in the effort creates the right outcomes, no matter how old you are when you start.',
-    episode: '31'
-  },
-  {
-    name: 'Michael Cunningham',
-    company: 'Kingdom Keepers',
-    website: 'https://www.kingdomkeepersoutreach.org/',
-    about: 'Michael is a husband, father, founder and entrepreneur making a difference in the lives of at risk folks in our community. He and his team have grown Kingdom Keepers, a non profit that gets shoes and food into the hands of folks facing housing insecurity. Join us this week as he reflects on his story and tells us about how his process of going from wantrepreneur to entrepreneur evolved.',
-    episode: '25'
-  }
-]
+import { AWARD_WINNERS } from '../assets/data'
 
 const SEO_TEXT = 'Each month we invite on a guest who is creating their own opportunity for themselves themselves in their chosen field. Our selections range from artists to entrepreneurs, with non profits and everything in between.'
 
