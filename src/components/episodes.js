@@ -20,7 +20,6 @@ const Episodes = () => {
   `)
 
   const episodes = data.allPodcastEpisode.edges.sort((a, b) => new Date(b.node.date) - new Date(a.node.date));
-  console.log('data', data)
 
   return (
     <div style={{ padding: `.5rem`, marginTop: `1.45rem` }}>
