@@ -8,7 +8,7 @@ const SecondPage = () => (
   <>
     <SEO title="The Books" />
     <div className="site-margin">
-      <h2>Here's the books we read and links to get them</h2>
+      <h2 className="base-font">Here's the books we read and links to get them</h2>
       {BOOKS.map(book => (
         <div key={book.title.replace(' ', '-')} style={{
           padding: '.5rem',

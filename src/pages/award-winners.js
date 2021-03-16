@@ -10,7 +10,7 @@ const Process = () => (
   <>
     <SEO title="Jerami Grant Award Winners" description={SEO_TEXT} />
     <div className="site-margin">
-      <h2>Jerami Grant award winners.</h2>
+      <h2 className="base-font">Jerami Grant award winners.</h2>
       <p>{SEO_TEXT}</p>
       {AWARD_WINNERS.map(winner => (
         <div key={winner.name.replace(' ', '-')} style={{

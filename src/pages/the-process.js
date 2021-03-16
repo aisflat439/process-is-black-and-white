@@ -45,7 +45,7 @@ const Process = () => (
   <>
     <SEO title="The Process" />
     <div className="site-margin">
-      <h2>Vernon has questions... we have the answers</h2>
+      <h2 className="base-font">Vernon has questions... we have the answers</h2>
       {QUESTIONS.map(question => (
         <div key={question.title.replace(' ', '-')} style={{
           padding: '.5rem',
