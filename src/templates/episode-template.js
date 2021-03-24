@@ -40,7 +40,7 @@ const Episodes = ({ pageContext }) => {
             <AudioCard
               title={pageContext.title}
               art="https://www.theprocessisblackandwhite.com/images/logo2.png"
-              source={pageContext.url}
+              source={pageContext.url.replace('http', 'https')}
               skipBackSeconds={10}
               skipForwardSeconds={30}
               background="black"

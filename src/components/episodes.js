@@ -26,7 +26,7 @@ const Episodes = () => {
       {episodes.map(({ node: episode }) => (
         <div key={episode.title.replace(' ', '-')} style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}>
           <div style={{ border: `2px solid black`, padding: `1.5rem` }}>
-            <h2 class="base-font" style={{ marginTop: `1rem` }}><span style={{ color: `black`, textDecoration: `none` }}>{episode.title}</span></h2>
+            <h2 className="base-font" style={{ marginTop: `1rem` }}><span style={{ color: `black`, textDecoration: `none` }}>{episode.title}</span></h2>
             <div style={{ marginBottom: '10px' }}><Link to={episode.slug}>Listen here</Link> </div>
             <div dangerouslySetInnerHTML={{ __html: episode.summary }} />
           </div>
@@ -35,13 +35,12 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <p>Chapter Three of the "The Hot Hand: The Mystery and Science of Streaks".</p>
-          <p>The guys discuss how frequently they are fooled by randomness. Do hot streaks exist? How should they best react to knowing that the data doesn't back the feeling of being hot. Can either of them shoot the rock effectively? We also get updates about the work both Vernon and Devin are putting in, and this week, the lack of results they are getting.</p>
+          <p>Chapter Four of the "The Hot Hand: The Mystery and Science of Streaks".</p>
+          <p>In this episode we reflect on James Naismith and Paul Reed. The importance of diversification and the role that it plays in our lives. We consider how thinking about ownership of assets impacts our own lives as creators and entrepreneurs.</p>
           <h3>Links:</h3>
           <p>Our new book <a href="https://amzn.to/37GgUxe">The Hot Hand<a/></p>
-          <p>Wilt - <a href="https://en.wikipedia.org/wiki/Wilt_Chamberlain">Wikipedia</a></p>
-          <p>MVP Candidate- <a href="https://twitter.com/sixers/status/1371783553084751873?s=20">Twitter</a></p>
-          <p>Harvey Pollack - <a href="https://en.wikipedia.org/wiki/Harvey_Pollack">Wikipedia</a></p>
+          <p>Paul Reed - <a href="https://en.wikipedia.org/wiki/Paul_Reed_(basketball)">Wikipedia</a></p>
+          <p>Get help if you need it- <a href="https://www.mentalhealth.gov/get-help/immediate-help">Mental Health Resource</a></p>
           </article>
       </div> */}
     </div >
