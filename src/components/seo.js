@@ -31,6 +31,8 @@ function SEO({ description, lang, meta, title, image }) {
   const cardImage = `${site.siteMetadata.siteUrl}${image || site.siteMetadata.image}`
   const seoTitle = title === "Home" ? site.siteMetadata.title : title || site.siteMetadata.title
 
+  console.log(site)
+
   return (
     <Helmet
       htmlAttributes={{
@@ -108,7 +110,6 @@ SEO.propTypes = {
   image: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  siteUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }
 

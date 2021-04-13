@@ -28,7 +28,7 @@ const Episodes = () => {
         <div key={episode.title.replace(' ', '-')} style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}>
           <div style={{ border: `2px solid black`, padding: `1.5rem` }}>
             <h2 className="base-font" style={{ marginTop: `1rem` }}><span style={{ color: `black`, textDecoration: `none` }}>{episode.title}</span></h2>
-            <div style={{ marginBottom: '10px' }}><Link to={episode.title.replaceAll(' ', '-').replaceAll('---', '-').toLowerCase()}>Listen here</Link> </div>
+            <div style={{ marginBottom: '10px' }}><Link to={`podcast/${episode.title.replaceAll(' ', '-').replaceAll('---', '-').toLowerCase()}`}>Listen here</Link> </div>
             <div dangerouslySetInnerHTML={{ __html: episode.content }} />
           </div>
         </div>
@@ -36,11 +36,12 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <p>Is this the last episode? Is the show over? Nah.... We're gonna keep</p>
-          <p>Chapter Five of the "The Hot Hand: The Mystery and Science of Streaks".</p>
-          <p>In an exciting (and slightly overdue) surpise Vernon get's a promotion at work. How will the show continue? What about 2400themovement? Is Vernon's hot hand streak over or just getting started. Join us this week and tell a friend.</p>
+          <p>Chapter Seven of the "The Hot Hand: The Mystery and Science of Streaks".</p>
+          <p>Alec Bohm sneaks in safely when he should have been out, will the gang at 2400 also get to home plate safe? Find out in this episode of the show. We finish off our book and it's Vernon's chance pick. Will his streak of more data focused books continue? </p>
+          <p>Join us this week and tell a friend.</p>
           <h3>Links:</h3>
-          <p>Our new book <a href="https://amzn.to/37GgUxe">The Hot Hand<a/></p>
+          <p>Our new book <a href="https://amzn.to/3g0CDoN">The Power of Vulnerablility<a/></p>
+          <p>Our last book <a href="https://amzn.to/37GgUxe">The Hot Hand<a/></p>
           </article>
       </div> */}
     </div >

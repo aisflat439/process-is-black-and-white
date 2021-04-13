@@ -2,7 +2,7 @@ import React from "react"
 import AudioCard from "audiocard"
 import styled from 'styled-components'
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import ShareButtons from "../components/share-buttons"
 import FeatureBlock from "../components/feature-block"
 
@@ -28,7 +28,7 @@ const Episodes = ({ pageContext }) => {
 
   return (
     <>
-      <SEO title={pageContext.title} />
+      <Seo title={pageContext.title} />
       <div className="site-margin">
         <h1>{pageContext.title}</h1>
         <StyledInfoBlock>
