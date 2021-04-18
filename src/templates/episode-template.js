@@ -21,6 +21,13 @@ align-items: center;
 }
 `
 
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str
+  }
+  return str.slice(0, num) + '...'
+}
+
 const Episodes = ({ pageContext }) => {
   const releaseDate = new Date(pageContext.date)
   const url = typeof window !== 'undefined' ? window.location.href : '';
@@ -28,7 +35,7 @@ const Episodes = ({ pageContext }) => {
 
   return (
     <>
-      <Seo title={pageContext.title} />
+      <Seo title={pageContext.title} description={truncateString(pageContext.contentSnippet, 250)} />
       <div className="site-margin">
         <h1>{pageContext.title}</h1>
         <StyledInfoBlock>

@@ -6,12 +6,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allFeedPodcastEpisode {
+        allFeedPodcastEpisode(sort: {order: DESC, fields: isoDate}) {
           nodes {
             isoDate
             id
             title
             content
+            contentSnippet
             enclosure {
               url
             }
@@ -35,6 +36,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       id,
       title,
       content,
+      contentSnippet,
       enclosure
     } = episode
     const { url } = enclosure;
@@ -44,7 +46,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       .replaceAll('---', '-')
       .replaceAll('--', '-')
       .toLowerCase();
-    console.log(path)
 
     createPage({
       path: `podcast/${path}`,
@@ -52,6 +53,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: {
         date: isoDate,
         id,
+        contentSnippet,
         pagePath: path,
         subtitle: title,
         summary: content,

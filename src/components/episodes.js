@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 const Episodes = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allFeedPodcastEpisode(limit: 10) {
+      allFeedPodcastEpisode(sort: {order: DESC, fields: isoDate}, limit: 10) {
         edges {
           node {
             id
