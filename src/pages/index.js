@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Episodes from "../components/episodes"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Subscribe from "../components/subscribe"
 import ContactUs from "../components/contact-us"
 import FeatureBlock from "../components/feature-block"
@@ -37,7 +37,7 @@ const StyledDiv = styled.div`
 
 const IndexPage = ({ data }) => (
   <>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <div className="site-margin">
       <article>
         <h1 style={{ fontSize: `1rem`, marginBottom: `1.45rem` }}>A weekly show following the entrepreneurship journeys of two friends.</h1>
@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => (
   </ >
 )
 
-export const query = graphql`
+export const homepageQuery = graphql`
   query {
     file(relativePath: {eq: "embiid-ben-simmons.jpg"}){
           childImageSharp {

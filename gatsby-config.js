@@ -1,4 +1,4 @@
-const DESCRIPTION = `Two friends discuss starting a their respective businesses, and whatever that journey entails.Each week, they read a few chapters from a book, discuss what they read and how that relates to their businesses. New episodes every Tuesday.`
+const DESCRIPTION = `Two friends discuss starting a their respective businesses, and whatever that journey entails. Each week, they read a few chapters from a book, discuss what they read and how that relates to their businesses. New episodes every Tuesday.`
 
 module.exports = {
   siteMetadata: {
@@ -9,26 +9,40 @@ module.exports = {
     siteUrl: 'https://www.theprocessisblackandwhite.com'
   },
   plugins: [
+    // {
+    //   resolve: `@arshad/gatsby-theme-podcast-core`,
+    //   options: {
+    //     feedUrl: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,
+    //     podcast: {
+    //       name: `The Process is Black and White`,
+    //       description: DESCRIPTION,
+    //       image: `/images/logo2.png`,
+    //       social: [
+    //         {
+    //           name: `Apple Podcast`,
+    //           url: `https://itunes.apple.com`,
+    //         },
+    //         {
+    //           name: `Google Podcast`,
+    //           url: `https://podcasts.google.com`,
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
     {
-      resolve: `@arshad/gatsby-theme-podcast-core`,
+      resolve: `gatsby-source-rss-feed`,
       options: {
-        feedUrl: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,
-        podcast: {
-          name: `The Process is Black and White`,
-          description: DESCRIPTION,
-          image: `/images/logo2.png`,
-          social: [
-            {
-              name: `Apple Podcast`,
-              url: `https://itunes.apple.com`,
-            },
-            {
-              name: `Google Podcast`,
-              url: `https://podcasts.google.com`,
-            },
-          ],
-        },
-      },
+        url: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,
+        name: `PodcastEpisode`,
+        // Optional
+        // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
+        parserOption: {
+          customFields: {
+            item: ['itunes:duration']
+          }
+        }
+      }
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,

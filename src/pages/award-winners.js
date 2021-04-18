@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { AWARD_WINNERS } from '../assets/data'
 
 const SEO_TEXT = 'Each month we invite on a guest who is creating their own opportunity for themselves themselves in their chosen field. Our selections range from artists to entrepreneurs, with non profits and everything in between.'
 
 const Process = () => (
   <>
-    <SEO title="Jerami Grant Award Winners" description={SEO_TEXT} />
+    <Seo title="Jerami Grant Award Winners" description={SEO_TEXT} />
     <div className="site-margin">
       <h2 className="base-font">Jerami Grant award winners.</h2>
       <p>{SEO_TEXT}</p>

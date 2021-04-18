@@ -6,15 +6,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allPodcastEpisode {
+        allFeedPodcastEpisode(sort: {order: DESC, fields: isoDate}) {
           nodes {
-            date(locale: "us")
+            isoDate
             id
-            slug
-            subtitle
-            summary
             title
-            url
+            content
+            contentSnippet
+            enclosure {
+              url
+            }
           }
         }
       }
@@ -29,26 +30,33 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create pages for each podcast episode.
   const episodeTemplate = path.resolve(`src/templates/episode-template.js`)
 
-  result.data.allPodcastEpisode.nodes.forEach((episode) => {
+  result.data.allFeedPodcastEpisode.nodes.forEach((episode) => {
     const {
-      date,
+      isoDate,
       id,
-      slug,
-      subtitle,
-      summary,
       title,
-      url,
+      content,
+      contentSnippet,
+      enclosure
     } = episode
+    const { url } = enclosure;
+    const path = title
+      .replace(/[^a-zA-Z0-9 ]/g, "")
+      .replaceAll(' ', '-')
+      .replaceAll('---', '-')
+      .replaceAll('--', '-')
+      .toLowerCase();
 
     createPage({
-      path: slug,
+      path: `podcast/${path}`,
       component: episodeTemplate,
       context: {
-        date,
+        date: isoDate,
         id,
-        pagePath: slug,
-        subtitle,
-        summary,
+        contentSnippet,
+        pagePath: path,
+        subtitle: title,
+        summary: content,
         title,
         url,
       },

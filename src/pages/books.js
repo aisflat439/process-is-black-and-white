@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { BOOKS } from '../assets/data'
 
 const SecondPage = () => (
   <>
-    <SEO title="The Books" />
+    <Seo title="The Books" />
     <div className="site-margin">
       <h2 className="base-font">Here's the books we read and links to get them</h2>
       {BOOKS.map(book => (
