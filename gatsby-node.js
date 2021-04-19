@@ -42,9 +42,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const { url } = enclosure;
     const path = title
       .replace(/[^a-zA-Z0-9 ]/g, "")
-      .replaceAll(' ', '-')
-      .replaceAll('---', '-')
-      .replaceAll('--', '-')
+      .replace(/ /g, '-')
+      .replace(/---/g, '-')
+      .replace(/--/g, '-')
       .toLowerCase();
 
     createPage({
