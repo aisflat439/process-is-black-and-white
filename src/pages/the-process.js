@@ -6,9 +6,9 @@ import Seo from "../components/seo"
 
 const makePath = (title) => title
       .replace(/[^a-zA-Z0-9 ]/g, "")
-      .replaceAll(' ', '-')
-      .replaceAll('---', '-')
-      .replaceAll('--', '-')
+      .replace(/ /g, '-')
+      .replace(/---/g, '-')
+      .replace(/--/g, '-')
       .toLowerCase();
 
 const StyledArticle = styled.article`
