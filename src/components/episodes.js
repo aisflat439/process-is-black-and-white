@@ -1,6 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
+const makePath = (title) => title
+      .replace(/[^a-zA-Z0-9 ]/g, "")
+      .replace(/ /g, '-')
+      .replace(/---/g, '-')
+      .replace(/--/g, '-')
+      .toLowerCase();
+
+
 const Episodes = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
@@ -28,7 +36,7 @@ const Episodes = () => {
         <div key={episode.title.replace(' ', '-')} style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}>
           <div style={{ border: `2px solid black`, padding: `1.5rem` }}>
             <h2 className="base-font" style={{ marginTop: `1rem` }}><span style={{ color: `black`, textDecoration: `none` }}>{episode.title}</span></h2>
-            <div style={{ marginBottom: '10px' }}><Link to={`podcast/${episode.title.replaceAll(' ', '-').replaceAll('---', '-').toLowerCase()}`}>Listen here</Link> </div>
+            <div style={{ marginBottom: '10px' }}><Link to={`podcast/${makePath(episode.title)}`}>Listen here</Link> </div>
             <div dangerouslySetInnerHTML={{ __html: episode.content }} />
           </div>
         </div>
