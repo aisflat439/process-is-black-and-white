@@ -44,12 +44,12 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <p>Chapter Seven of the "The Hot Hand: The Mystery and Science of Streaks".</p>
-          <p>Alec Bohm sneaks in safely when he should have been out, will the gang at 2400 also get to home plate safe? Find out in this episode of the show. We finish off our book and it's Vernon's chance pick. Will his streak of more data focused books continue? </p>
-          <p>Join us this week and tell a friend.</p>
+          <p>Chapter two of the "The Power of Vulnerablility".</p>
+          <p>The guys discuss the power of a teenager taking a video. They both reflect on how shame is something that can hold us back from being creative, fullfilled and ourselves.</p>
+          <p>Vernon suggests a new podcast episode to listen to this week as well</p>
           <h3>Links:</h3>
           <p>Our new book <a href="https://amzn.to/3g0CDoN">The Power of Vulnerablility<a/></p>
-          <p>Our last book <a href="https://amzn.to/37GgUxe">The Hot Hand<a/></p>
+          <p>Podcast to listen to: <a href="https://www.audible.com/pd/Weve-Got-Answers-Audiobook/B08WF112B9">We've Got Answers<a/></p>
           </article>
       </div> */}
     </div >

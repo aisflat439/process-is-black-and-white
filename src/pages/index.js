@@ -43,10 +43,14 @@ const IndexPage = ({ data }) => (
         <h1 style={{ fontSize: `1rem`, marginBottom: `1.45rem` }}>A weekly show following the entrepreneurship journeys of two friends.</h1>
         <section>
           <ContactContainer>
-              <h2 style={{ display: "inline-block", fontFamily: 'sans-serif', fontSize: '1.25rem', lineHeight: '150%', fontWeight: 'normal', marginBottom: '0'}}>If you'd enjoy sharing the journey of two friends building businesses, this show is for you. Vernon and Devin found friendship through a shared love of Philadelphia sports. As their friendship evolved and grew over time they began to discuss life, family, food and business.
-              </h2> 
-            <p style={{display: "inline-block"}}>
-              They both began to look to start a side business in 2020 and realized they were at a similar stage. Over the course of a few text messages and conversations they decided to start a book club to learn along together. Each week, they discuss a few chapters from a book, give updates about steps they've taken in the journey from wantrepreneur to entrepreneur.</p>
+            <div style={{display: 'flex', flexDirection: "column", paddingRight: ".5rem"}}>
+                <h2 style={{  fontFamily: 'sans-serif', fontSize: '1.25rem', lineHeight: '150%', fontWeight: 'normal', marginBottom: '0'}}>
+                  If you'd enjoy sharing the journey of two friends building businesses, this show is for you. Vernon and Devin found friendship through a shared love of Philadelphia sports. As their friendship evolved and grew over time they began to discuss life, family, food and business.
+                </h2> 
+              <p style={{}}>
+                They both began to look to start a side business in 2020 and realized they were at a similar stage. Over the course of a few text messages and conversations they decided to start a book club to learn along together. Each week, they discuss a few chapters from a book, give updates about steps they've taken in the journey from wantrepreneur to entrepreneur.
+              </p>
+            </div>
             <ContactUs data={data} />
           </ContactContainer>
         </section>

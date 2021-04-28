@@ -1,5 +1,10 @@
 export const BOOKS = [
   {
+    title: 'The Power of Vulnerablility',
+    author: 'Dr Brene Brown',
+    link: 'https://amzn.to/3g0CDoN'
+  },
+  {
     title: 'The Hot Hand: The Mystery and Science of Streaks ',
     author: 'Ben Cohen',
     link: 'https://amzn.to/37GgUxe'
