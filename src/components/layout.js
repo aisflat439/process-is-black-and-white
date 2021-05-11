@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           maxWidth: 1140,
           margin: `0 auto`
         }}>
-          Vernon Lee - <a style={{ color: `white` }} href="https://www.fitzsimons.dev">Personal Site</a>
+          Vernon Lee - <a style={{ color: `white` }} href="https://24hundredthemovement.com/pages/bio">Personal Site</a>
           <br />
           and
           <br />
