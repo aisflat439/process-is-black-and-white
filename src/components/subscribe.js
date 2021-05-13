@@ -69,7 +69,7 @@ const Subscribe = () => (
       <div style={{ fontSize: `2rem` }}>
         <StyledList>
           {SERVICES.map(service => (
-            <li key={service.name.replace(' ', '-')} style={{}}>
+            <li key={service.name.replace(' ', '-')} data-testId={service.name.replace(' ', '-')} style={{}}>
               <a
                 style={{ color: `white`, textDecoration: `none`, lineHeight: '125%' }}
                 target="_blank"

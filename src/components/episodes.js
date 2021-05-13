@@ -33,7 +33,11 @@ const Episodes = () => {
   return (
     <div style={{ padding: `.5rem`, marginTop: `1.45rem` }}>
       {episodes.map(({ node: episode }) => (
-        <div key={episode.title.replace(' ', '-')} style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}>
+        <div 
+          key={episode.title.replace(' ', '-')} 
+          data-testId={episode.title.replace(' ', '-')} 
+          style={{ border: `2px solid black`, padding: `.5rem`, marginBottom: `1.45rem` }}
+        >
           <div style={{ border: `2px solid black`, padding: `1.5rem` }}>
             <h2 className="base-font" style={{ marginTop: `1rem` }}><span style={{ color: `black`, textDecoration: `none` }}>{episode.title}</span></h2>
             <div style={{ marginBottom: '10px' }}><Link to={`podcast/${makePath(episode.title)}`}>Listen here</Link> </div>

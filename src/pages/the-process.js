@@ -30,7 +30,7 @@ const StyledArticle = styled.article`
 const Process = () => {
   const data = useStaticQuery(graphql`
       query ProcessQuery {
-        allFeedPodcastEpisode {
+        allFeedPodcastEpisode(sort: {order: DESC, fields: isoDate}) {
           edges {
             node {
               id
