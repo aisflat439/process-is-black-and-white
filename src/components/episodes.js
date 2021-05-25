@@ -48,12 +48,11 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <p>Chapter four of the "The Power of Vulnerablility".</p>
-          <p>Another wide ranging conversation. We discuss EconTalk, podcasts, and the 1619 project. Along with reflecting on what kind of vulnerability we each have. We reflect a little on business, but more on life and living well.</p>
+          <p>Chapter Six of the "The Power of Vulnerability".</p>
+          <p>We discuss if instant replay should exist, hot takes abound. In the final chapter of The Power of Vulnerability we reflect on Brene Browns 10 guideposts. We also reflect on Tobias Harris and the importance of having roles that make sense. Finally, we discuss our newest book, The Four Hour Workweek. Join us this week, and tell a friend</p>
           <h3>Links:</h3>
-          <p>Our new book <a href="https://amzn.to/3g0CDoN">The Power of Vulnerablility</a></p>
-          <p>This weeks podcast to listen to: <a href="https://www.nytimes.com/2020/01/23/podcasts/1619-podcast.html">1619 Project</a></p>
-          <p>Last weeks podcast to listen to: <a href="https://www.econtalk.org/lisa-cook-on-racism-patents-and-black-entrepreneurship/">EconTalk</a></p>
+          <p>Our newest book <a href="https://amzn.to/34jgYRI">The Four Hour Work Week</a></p>
+          <p>Our last book <a href="https://amzn.to/3g0CDoN">The Power of Vulnerability</a></p>
         </article>
       </div> */}
     </div >

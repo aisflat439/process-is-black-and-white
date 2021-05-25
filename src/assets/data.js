@@ -1,5 +1,10 @@
 export const BOOKS = [
   {
+    title: 'The Four Hour Workweek',
+    author: 'Tim Ferris',
+    link: 'https://amzn.to/34jgYRI'
+  },
+  {
     title: 'The Power of Vulnerablility',
     author: 'Dr Brene Brown',
     link: 'https://amzn.to/3g0CDoN'
