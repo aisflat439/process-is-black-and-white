@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, image }) {
+function SEO({ description, lang, meta, title, image, ogImageUrl }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,8 +27,9 @@ function SEO({ description, lang, meta, title, image }) {
     `
   )
 
+  const ogImagePath = `http://localhost:8000/__generated/og-image${ogImageUrl}.png`;
   const metaDescription = description || site.siteMetadata.description
-  const cardImage = `${site.siteMetadata.siteUrl}${image || site.siteMetadata.image}`
+  const cardImage = `${site.siteMetadata.siteUrl}${ogImageUrl ? ogImagePath : site.siteMetadata.image}`
   const seoTitle = title === "Home" ? site.siteMetadata.title : title || site.siteMetadata.title
 
   return (
@@ -49,7 +50,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `og:image`,
-          content: cardImage,
+          content: ogImagePath,
         },
         {
           property: `og:title`,
