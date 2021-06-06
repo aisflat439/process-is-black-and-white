@@ -50,7 +50,7 @@ function SEO({ description, lang, meta, title, image, ogImageUrl }) {
         },
         {
           name: `og:image`,
-          content: ogImagePath,
+          content: cardImage,
         },
         {
           property: `og:title`,
