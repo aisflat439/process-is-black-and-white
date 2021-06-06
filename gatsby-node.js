@@ -1,4 +1,5 @@
 const path = require("path")
+const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images");
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -15,6 +16,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             contentSnippet
             enclosure {
               url
+            }
+            itunes {
+              duration
             }
           }
         }
@@ -37,28 +41,47 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       title,
       content,
       contentSnippet,
-      enclosure
+      enclosure,
+      itunes
     } = episode
     const { url } = enclosure;
-    const path = title
+    const { duration } = itunes;
+    const pagePath = title
       .replace(/[^a-zA-Z0-9 ]/g, "")
       .replace(/ /g, '-')
       .replace(/---/g, '-')
       .replace(/--/g, '-')
       .toLowerCase();
 
+    const openGraphImage = createOpenGraphImage(createPage, {
+      path: `/og-image/${id}.png`,
+      component: path.resolve(`src/templates/og-image.js`),
+      size: {
+        width: 400,
+        height: 50,
+      },
+      context: {
+        id,
+        title,
+        duration,
+        date: isoDate,
+      },
+    });
+
     createPage({
-      path: `podcast/${path}`,
+      path: `podcast/${pagePath}`,
       component: episodeTemplate,
       context: {
         date: isoDate,
+        duration,
         id,
         contentSnippet,
-        pagePath: path,
+        pagePath: pagePath,
         subtitle: title,
         summary: content,
         title,
         url,
+        ogImage: openGraphImage,
       },
     })
   })

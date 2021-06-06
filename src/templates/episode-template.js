@@ -35,7 +35,11 @@ const Episodes = ({ pageContext }) => {
 
   return (
     <>
-      <Seo title={pageContext.title} description={truncateString(pageContext.contentSnippet, 250)} />
+      <Seo 
+        title={pageContext.title} 
+        description={truncateString(pageContext.contentSnippet, 250)} 
+        ogImageUrl={pageContext.id}
+        />
       <div className="site-margin">
         <h1>{pageContext.title}</h1>
         <StyledInfoBlock>

@@ -9,27 +9,6 @@ module.exports = {
     siteUrl: 'https://www.theprocessisblackandwhite.com'
   },
   plugins: [
-    // {
-    //   resolve: `@arshad/gatsby-theme-podcast-core`,
-    //   options: {
-    //     feedUrl: `http://cast.rocks/hosting/26747/feeds/6EK9V.xml`,
-    //     podcast: {
-    //       name: `The Process is Black and White`,
-    //       description: DESCRIPTION,
-    //       image: `/images/logo2.png`,
-    //       social: [
-    //         {
-    //           name: `Apple Podcast`,
-    //           url: `https://itunes.apple.com`,
-    //         },
-    //         {
-    //           name: `Google Podcast`,
-    //           url: `https://podcasts.google.com`,
-    //         },
-    //       ],
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-source-rss-feed`,
       options: {

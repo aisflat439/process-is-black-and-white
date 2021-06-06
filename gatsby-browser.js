@@ -2,5 +2,7 @@ import React from 'react';
 import Layout from './src/components/layout';
 
 export function wrapPageElement({ element, props }) {
-  return <Layout {...props}>{element}</Layout>;
+  if (!props.path.includes('/__generated')) {
+    return <Layout {...props}>{element}</Layout>;
+  }
 }
