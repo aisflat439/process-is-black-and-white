@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title, image, ogImageUrl }) {
     `
   )
 
-  const ogImagePath = `http://localhost:8000/__generated/og-image${ogImageUrl}.png`;
+  const ogImagePath = `/__generated/og-image${ogImageUrl}.png`;
   const metaDescription = description || site.siteMetadata.description
   const cardImage = `${site.siteMetadata.siteUrl}${ogImageUrl ? ogImagePath : site.siteMetadata.image}`
   const seoTitle = title === "Home" ? site.siteMetadata.title : title || site.siteMetadata.title
