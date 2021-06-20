@@ -29,7 +29,6 @@ const Header = ({ siteTitle }) => (
           fontSize: `3rem`,
           fontWeight: 400,
           margin: 0,
-          // fontFamily: `AbrilFatface`,
         }}>
           <Link
             to="/"
@@ -62,8 +61,8 @@ const Header = ({ siteTitle }) => (
               textDecoration: `none`,
             }}
           >
-            the process
-        </Link>
+              the process
+          </Link>
         </h3>
         <h3 style={{ margin: `.5rem` }}>
           <Link

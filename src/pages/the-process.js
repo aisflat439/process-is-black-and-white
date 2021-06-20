@@ -57,9 +57,9 @@ const Process = () => {
         <StyledArticle key={episode.id}>
           <div>
             <Link to={`/podcast/${makePath(episode.title)}`}>
-            <h3>{episode.title}</h3>
-            <p>Published on {new Intl.DateTimeFormat('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(episode.isoDate))}</p>
-          </Link>
+              <h3>{episode.title}</h3>
+              <p>Published on {new Intl.DateTimeFormat('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(episode.isoDate))}</p>
+            </Link>
           </div>
         </StyledArticle>
       ))}
