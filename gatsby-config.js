@@ -25,6 +25,7 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-open-graph-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
