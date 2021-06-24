@@ -42,7 +42,6 @@ const Episodes = ({ pageContext }) => {
         />
       <div className="site-margin">
         <h1>{pageContext.title}</h1>
-        <p>{pageContext.id}</p>
         <StyledInfoBlock>
           <h3>{new Intl.DateTimeFormat('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(releaseDate)}</h3>
           <ShareButtons url={url} title={pageContext.title} description={shareDescription} />
