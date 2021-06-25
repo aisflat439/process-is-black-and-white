@@ -57,8 +57,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `/og-image/${id}.png`,
       component: path.resolve(`src/templates/og-image.js`),
       size: {
-        width: 400,
-        height: 50,
+        width: 500,
+        height: 500,
       },
       context: {
         id,
