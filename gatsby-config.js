@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: 'https://www.theprocessisblackandwhite.com'
   },
   plugins: [
+    `gatsby-plugin-open-graph-images`,
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
@@ -25,7 +26,6 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-open-graph-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

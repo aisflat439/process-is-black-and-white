@@ -14,7 +14,8 @@ import SiteStyles from '../styles/SiteStyles';
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({children, path}) => {
+  const isHidden = path.includes('__generated');
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,11 +30,12 @@ const Layout = ({ children }) => {
     <>
       <Typography />
       <SiteStyles />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} isHidden={isHidden}/>
         <div>
           <main>{children}</main>
         </div>
-        <footer style={{
+       {!isHidden && 
+        (<footer style={{
           backgroundColor: `black`, color: `white`, margin: `0 auto`,
           padding: `1.45rem 1.0875rem`,
         }}>
@@ -51,7 +53,7 @@ const Layout = ({ children }) => {
             {` `}
             <a href="https://www.gatsbyjs.org" style={{ color: `white` }}>Gatsby</a>
           </div>
-        </footer>
+        </footer>)}
       </>
   )
 }

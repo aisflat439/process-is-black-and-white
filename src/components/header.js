@@ -2,8 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
+const Header = ({ siteTitle, isHidden }) => {
+  if (isHidden) return <></>
+  return (
+   <header
     style={{
       background: `black`,
       marginBottom: `1.45rem`,
@@ -78,7 +80,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
   </header >
-)
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
