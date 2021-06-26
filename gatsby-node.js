@@ -53,20 +53,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       .replace(/--/g, '-')
       .toLowerCase();
 
-    const openGraphImage = createOpenGraphImage(createPage, {
-      path: `/og-image/${id}.png`,
-      component: path.resolve(`src/templates/og-image.js`),
-      size: {
-        width: 500,
-        height: 500,
-      },
-      context: {
-        id,
-        title,
-        duration,
-        date: isoDate,
-      },
-    });
+    // const openGraphImage = createOpenGraphImage(createPage, {
+    //   path: `/og-image/${id}.png`,
+    //   component: path.resolve(`src/templates/og-image.js`),
+    //   size: {
+    //     width: 500,
+    //     height: 500,
+    //   },
+    //   context: {
+    //     id,
+    //     title,
+    //     duration,
+    //     date: isoDate,
+    //   },
+    // });
 
     createPage({
       path: `podcast/${pagePath}`,
@@ -81,7 +81,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         summary: content,
         title,
         url,
-        ogImage: openGraphImage,
+        // ogImage: openGraphImage,
       },
     })
   })
