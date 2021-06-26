@@ -1,50 +1,60 @@
 import React from "react";
-import Typography from '../styles/Typography';
+import styled from 'styled-components'
 
-const mainBox = {
-  color: 'white',
-  backgroundColor: 'black',
-  height: '500px',
-  width: '500px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-}
+const ChevronDiv = styled.div`
+  color: white;
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .white-box {
+    background-color: white;
+    height: 480px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-const whiteBox = {
-  backgroundColor: 'white',
-  height: '480px',
-  width: '480px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-}
+  .black-box {
+    padding: 20px;
+    background-color: black;
+    height: 460px;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 26px;
+    line-height: 1.25;
 
-const blackBox = {
-  padding: '20px',
-  backgroundColor: 'black',
-  height: '460px',
-  width: '460px',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  fontSize: '26px',
-  lineHeight: '1.25',
-}
+    .episode-title {
+      font-size: 48px;
+      margin-bottom: 10px;
 
-const episodeTitleStyles = {
-  fontSize: '42px',
-  marginBottom: '10px',
-}
+      span {
+        font-size: 32px;
+      }
+    }
+  }
 
-const showTitleStyles = {
-  display: 'flex',
-  fontFamily: 'Abril',
-  justifyContent: 'space-between',
-  alignItems: 'flex-end',
-  marginBottom: '0',
-  fontSize: '66px',
-}
+  .show-title {
+    display: flex;
+    font-family: Abril;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+    font-size: 66px;
+
+    span {
+      font-family: Robo;
+      font-size: 18px;
+      margin-bottom: 10px
+    }
+  }
+`
 
 const ogImage = ({ pageContext }) => { 
   const [episodeNumber, episodeTitle] = pageContext.title.split("-");
@@ -52,33 +62,18 @@ const ogImage = ({ pageContext }) => {
   const time = pageContext.duration.split(":")[1]
   
   return (
-  <>
-    <Typography />
-    <div style={mainBox}>
-      <div style={whiteBox}>
-        <div style={blackBox}>
-          <div>
-            <div style={episodeTitleStyles}>
-              <span style={{
-                fontSize: '34px'
-                }}>{episodeNumber}<br />
-              </span>
-              {episodeTitle}
-            </div>
-            <div>{releaseDate}</div>
-            <div>{time} minutes</div>
-          </div>
-          <h2 style={showTitleStyles}>TPIBAW <span
-            style={{
-              fontFamily: 'Robo',
-              fontSize: '18px',
-              marginBottom: '10px',
-            }}
-          >since 2020</span></h2>
+  <ChevronDiv>
+    <div className="white-box">
+      <div className="black-box">
+        <div>
+          <div className="episode-title"><span>{episodeNumber}<br /></span>{episodeTitle}</div>
+          <div>{releaseDate}</div>
+          <div>{time} minutes</div>
         </div>
+        <h2 className="show-title">TPIBAW <span>since 2020</span></h2>
       </div>
     </div>
-  </>
+  </ChevronDiv>
 )};
 
 export default ogImage
