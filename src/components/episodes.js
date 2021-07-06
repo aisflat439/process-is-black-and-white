@@ -48,13 +48,11 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <h4>A special episode.</h4>
-          <p>It's the first Juneteenth, so we talk about it.</p>
-          <p>Vernon and Devin discuss Juneteenth. How does it feel as a black man, a white man, and an American man. How should we celebrate, is this a solemn day of reflection, or should a joyous day. We're happy to have this discussion and learn from one another. That's the process on our show. Special shout out to the 1619 project, which provides wonderful storytelling and education about difficult and complicated subject.</p>
-          <p>Happy birthday to Vernons little man too</p>
+          <p>The final chapter of The Four Hour Work Week</p>
+          <p>Devin is going to pivot, Vernon and the guys at 2400 are trying to figure out the path they want to take. Not only that, but we pick a new book, and finish off this book. All this and some reflection on what the July 4th holiday means to each of them. We're glad to be in your ears this week.</p>
           <h3>Links:</h3>
+          <p>Our new book <a href="https://amzn.to/3hhs80s">The Lean Startup</a></p>
           <p>Our current book <a href="https://amzn.to/34jgYRI">The Four Hour Work Week</a></p>
-          <p>Podcast: <a href="https://open.spotify.com/show/7j5MhJCMBvOjF1Asi9LPLX">1619 Project</a></p>
         </article>
       </div> */}
     </div >
