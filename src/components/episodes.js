@@ -48,11 +48,10 @@ const Episodes = () => {
       }
       {/* <div>
         <article>
-          <p>The final chapter of The Four Hour Work Week</p>
-          <p>Devin is going to pivot, Vernon and the guys at 2400 are trying to figure out the path they want to take. Not only that, but we pick a new book, and finish off this book. All this and some reflection on what the July 4th holiday means to each of them. We're glad to be in your ears this week.</p>
+          <p>Chapters 1-2-3 of The Lean Startup</p>
+          <p>The guys discuss what they think of the USA losing to France. Is JoJo and American basketball player? Is Luka? Vernon and Devin are both moving forward in their businesses, figuring out what's next. Along with discussion and reflection on this weeks chapters. Join us, and tell a friend.</p>
           <h3>Links:</h3>
-          <p>Our new book <a href="https://amzn.to/3hhs80s">The Lean Startup</a></p>
-          <p>Our current book <a href="https://amzn.to/34jgYRI">The Four Hour Work Week</a></p>
+          <p>Our current book  <a href="https://amzn.to/3hhs80s">The Lean Startup</a></p>
         </article>
       </div> */}
     </div >
