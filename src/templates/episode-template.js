@@ -22,10 +22,10 @@ align-items: center;
 `
 
 function truncateString(str, num) {
-  if (str.length <= num) {
+  if (str?.length <= num) {
     return str
   }
-  return str.slice(0, num) + '...'
+  return str?.slice(0, num) + '...'
 }
 
 const Episodes = ({ pageContext }) => {
