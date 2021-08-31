@@ -1,5 +1,5 @@
 const path = require("path")
-const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images");
+const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allFeedPodcastEpisode(sort: {order: DESC, fields: isoDate}) {
+        allFeedPodcastEpisode(sort: { order: DESC, fields: isoDate }) {
           nodes {
             isoDate
             id
@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create pages for each podcast episode.
   const episodeTemplate = path.resolve(`src/templates/episode-template.js`)
 
-  result.data.allFeedPodcastEpisode.nodes.forEach((episode) => {
+  result.data.allFeedPodcastEpisode.nodes.forEach(episode => {
     const {
       isoDate,
       id,
@@ -42,18 +42,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       content,
       contentSnippet,
       enclosure,
-      itunes
+      itunes,
     } = episode
-    const { url } = enclosure;
-    const { duration } = itunes;
+    const { url } = enclosure
+    const { duration } = itunes
     const pagePath = title
       .replace(/[^a-zA-Z0-9 ]/g, "")
-      .replace(/ /g, '-')
-      .replace(/---/g, '-')
-      .replace(/--/g, '-')
-      .toLowerCase();
+      .replace(/ /g, "-")
+      .replace(/---/g, "-")
+      .replace(/--/g, "-")
+      .toLowerCase()
 
-    const openGraphImage = createOpenGraphImage(createPage, {
+    createOpenGraphImage(createPage, {
       path: `/og-image/${id}.png`,
       component: path.resolve(`src/templates/og-image.js`),
       size: {
@@ -66,7 +66,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         duration,
         date: isoDate,
       },
-    });
+    })
 
     createPage({
       path: `podcast/${pagePath}`,
@@ -81,7 +81,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         summary: content,
         title,
         url,
-        ogImage: openGraphImage,
       },
     })
   })
