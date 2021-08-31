@@ -1,5 +1,5 @@
 const path = require("path")
-const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
+// const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -53,20 +53,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       .replace(/--/g, "-")
       .toLowerCase()
 
-    createOpenGraphImage(createPage, {
-      path: `/og-image/${id}.png`,
-      component: path.resolve(`src/templates/og-image.js`),
-      size: {
-        width: 500,
-        height: 500,
-      },
-      context: {
-        id,
-        title,
-        duration,
-        date: isoDate,
-      },
-    })
+    // createOpenGraphImage(createPage, {
+    //   path: `/og-image/${id}.png`,
+    //   component: path.resolve(`src/templates/og-image.js`),
+    //   size: {
+    //     width: 500,
+    //     height: 500,
+    //   },
+    //   context: {
+    //     id,
+    //     title,
+    //     duration,
+    //     date: isoDate,
+    //   },
+    // })
 
     createPage({
       path: `podcast/${pagePath}`,
