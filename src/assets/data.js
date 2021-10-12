@@ -1,5 +1,11 @@
 export const BOOKS = [
   {
+    title: "This is Marketing",
+    author: "Seth Godin",
+    link:
+      "https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830",
+  },
+  {
     title: "Building a Storybrand",
     author: "Donald Miller",
     link: "https://storybrand.com/",

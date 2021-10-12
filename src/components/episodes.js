@@ -57,10 +57,10 @@ const Episodes = () => {
       ))}
       {/* <div>
         <article>
-          <p>Chapters 11-12-13 of Storybrand</p>
-          <p>This week we discuss how we react to the closing of Storybrand. What are we taking away, and how will we think about this book going forward. What they heck is an above the fold message? Next week we finish up Storybrand with the marketing playbook. Thanks for listening along!</p>
+          <p>We begin This is Marketing, by Seth Godin</p>
+          <p>Following up Building a Storybrand is Seth Godin's book, This is Marketing. The guys reflect on the opening 3 chapters. Is this the week we won't talk about Ben Simmons? Listen and find out!</p>
           <h3>Links:</h3>
-          <p>Our current book  <a href="https://www.amazon.com/Building-StoryBrand-Clarify-Message-Customers/dp/0718033329">Storybrand</a></p>
+          <p>Our current book  <a href="https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830">This is Marketing</a></p>
         </article>
       </div> */}
     </div>
