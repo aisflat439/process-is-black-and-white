@@ -57,10 +57,10 @@ const Episodes = () => {
       ))}
       {/* <div>
         <article>
-          <p>We begin This is Marketing, by Seth Godin</p>
-          <p>Following up Building a Storybrand is Seth Godin's book, This is Marketing. The guys reflect on the opening 3 chapters. Is this the week we won't talk about Ben Simmons? Listen and find out!</p>
+          <p>Part three of The Vanishing Half</p>
+          <p>The guys discuss how cool it is to watch someone elses process. They appreciate the changes of the podcasting platform they use, fusioncast. Then, they get into The Vanishing Half by Brit Bennett.</p>
           <h3>Links:</h3>
-          <p>Our current book  <a href="https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830">This is Marketing</a></p>
+          <p>Our new book  <a href="https://www.amazon.com/Vanishing-Half-Novel-Brit-Bennett/dp/0525536299">The Vanishing Half</a></p>
         </article>
       </div> */}
     </div>
